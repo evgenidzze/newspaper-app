@@ -13,3 +13,5 @@ class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
         fields = ('username', 'email', 'age',)
+
+    age = forms.IntegerField(required=False)
